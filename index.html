@@ -10,6 +10,38 @@
 </head>
 
 <body>
+    <main>
+        <div class="container">
+            <button class="btn" type="button" data-modal="modal-confirm">Открыть модальное окно Confirm</button>
+            <button class="btn" type="button" data-modal="modal-error">Открыть модальное окно Error</button>
+            <button class="btn" type="button" data-modal="modal-login">Открыть модальное окно Login</button>
+            <button class="btn" type="button" data-modal="modal-send">Открыть модальное окно Send</button>
+        </div>
+    </main>
+    <div class="modal" id="modal-confirm">
+        <div class="modal__inner">
+            <p>modal-confirm</p>
+            <button class="btn btn-close" aria-label="Закрыть модальное окно" type="button">
+                <svg viewBox="0 0 16 16" width="16" height="16">
+                    <defs />
+                    <path fill-rule="evenodd"
+                        d="M2.62.94a1 1 0 00-1.41 1.41L7 8.15l-5.8 5.78a1 1 0 101.42 1.42l5.8-5.8 5.51 5.53a1 1 0 001.42-1.42L9.83 8.14l5.52-5.52a1 1 0 00-1.42-1.41L8.41 6.73 2.62.93z"
+                        clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+
+    </div>
+    <div class="modal" id="modal-error">
+        <p>modal-error</p>
+    </div>
+    <div class="modal" id="modal-login">
+        <p>modal-login</p>
+    </div>
+    <div class="modal" id="modal-send">
+        <p>modal-send</p>
+    </div>
+    <div class="overlay"></div>
     <script src="script.js"></script>
 </body>
 
