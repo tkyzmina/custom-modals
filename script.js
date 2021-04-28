@@ -12,6 +12,7 @@ window.onload = () => {
   const showModal = (id) => {
     const modals = document.querySelectorAll(".modal");
     const overlay = document.querySelector(".overlay");
+
     modals.forEach(function (elem) {
       elem.classList.remove("js-modal-show");
 
@@ -25,8 +26,14 @@ window.onload = () => {
   const setModalListners = () => {
     const overlay = document.querySelector(".overlay");
     const modal = document.querySelector(".js-modal-show");
+    const btnClose = modal.querySelector(".btn-close");
 
     overlay.addEventListener("click", function () {
+      overlay.classList.remove("js-overlay-show");
+      modal.classList.remove("js-modal-show");
+    });
+
+    btnClose.addEventListener("click", function () {
       overlay.classList.remove("js-overlay-show");
       modal.classList.remove("js-modal-show");
     });
